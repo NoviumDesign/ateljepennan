@@ -1,0 +1,20 @@
+$legacy-support-for-mozilla: false;
+@include border-box-sizing;
+
+// $showgrid: <boolean>;
+$showgrid: false;
+
+// $total-columns: <number>;
+$total-columns: 1;
+
+// $container-width: <length> | <boolean>;
+$container-width: 1200px;
+
+// $container-style: <style>;c
+$container-style: fluid;
+
+@if $showgrid == true {
+  .container {
+    @include susy-grid-background;
+  }
+}
